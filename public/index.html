@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <title>Sarapov's chat</title>
+  </head>
+  <body>
+    <h1>Welcome, bitches!</h1>
+    <section class="chat-container">
+      <ul class="messages-container"></ul>
+      <form class="message-form">
+        <label class="message-form__label" for="">
+          Name:
+          <input type="text" class="user-input" placeholder="Name" />
+        </label>
+        <label class="message-form__label" for="">
+          Message:
+          <input type="text" class="message-input" placeholder="Place your message here" />
+        </label>
+        <button type="submit" class="send-button">Send</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
