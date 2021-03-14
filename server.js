@@ -1,11 +1,11 @@
 const express = require('express');
 const socket = require('socket.io');
-
 const app = express();
-const server = app.listen(3000, () => console.log('listening to 3000'));
+const PORT = process.env.PORT || 80;
+const server = app.listen(PORT, () => console.log('listening to PORT'));
 const io = socket(server, {
   cors: {
-    origin: 'http://192.168.1.57:3000',
+    origin: 'https://socket-io-experimental-chat.herokuapp.com',
     methods: ['GET', 'POST'],
   },
 });
