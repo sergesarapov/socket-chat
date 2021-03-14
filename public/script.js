@@ -1,4 +1,4 @@
-const socket = io.connect('https://socket-io-experimental-chat.herokuapp.com');
+const socket = io.connect('https://socket-io-experimental-chat.herokuapp.com/');
 
 const form = document.querySelector('.message-form');
 const userInput = document.querySelector('.user-input');

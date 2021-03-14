@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 80;
 const server = app.listen(PORT, () => console.log('listening to PORT'));
 const io = socket(server, {
   cors: {
-    origin: 'https://socket-io-experimental-chat.herokuapp.com',
+    origin: 'https://socket-io-experimental-chat.herokuapp.com/',
     methods: ['GET', 'POST'],
   },
 });
