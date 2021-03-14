@@ -10,6 +10,9 @@ const io = socket(server, {
   },
 });
 
+app.get('/', function (req, res) {
+  res.send('hello world');
+});
 app.use(express.static('public'));
 
 io.on('connection', (socket) => {
